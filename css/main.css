@@ -117,7 +117,35 @@ h1 {
     font-family: 'Bravo', sans-serif;
     font-size: 48px;
     line-height: 49px;
-    text-shadow: 1px 1px 10px black;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+}
+
+h2 {
+    text-align: center;
+    color: #cda248;
+    font-family: 'Bravo', sans-serif;
+    font-size: 36px;
+    line-height: 38px;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+}
+
+p {
+    font-family: 'Bravo', sans-serif;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+    font-size: 24px;
+    color: #cda248;
 }
 
 .main-menu__list {
@@ -139,7 +167,11 @@ h1 {
     font-size: 38px;
     line-height: 42px;
     position: relative;
-    text-shadow: 1px 1px 10px black;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;;
 }
 
 .menu-link::before {
@@ -195,7 +227,11 @@ h1 {
     line-height: 74px;
     text-align: center;
     display: none;
-    text-shadow: 1px 1px 10px black;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
 }
 
 .h__text {
@@ -334,7 +370,11 @@ a#prev:hover, a#next:hover {
     font-size: 36px;
     line-height: 38px;
     position: relative;
-    text-shadow: 1px 1px 10px black;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
     margin: 10px 0;
 }
 
@@ -383,7 +423,11 @@ a#prev:hover, a#next:hover {
     font-family: 'Bravo', sans-serif;
     font-size: 36px;
     line-height: 38px;
-    text-shadow: 1px 1px 10px black;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
 }
 
 .lore__item {
@@ -424,6 +468,55 @@ a#prev:hover, a#next:hover {
     right: -265px;
 }
 
+.block-info__attention {
+    flex: 4;
+    margin-right: 40px;
+    min-height: 250px;
+    background: url(../img/block.jpg);
+    border-radius: 15px;
+    border: 3px solid black;
+}
+
+.block-info__infobar {
+    flex: 4;
+    margin-left: 40px;
+    min-height: 250px;
+    background: url("../img/block.jpg") right;
+    border-radius: 15px;
+    border: 3px solid black;
+    text-align: right;
+}
+
+.block-info__attention h2 {
+    margin: 5px 0;
+}
+
+.block-info__attention p {
+    padding-left: 30px;
+    margin: 5px 0;
+}
+
+.bonus-item p {
+    margin: 0;
+}
+
+.block-info__infobar h2 {
+    margin: 5px 0;
+    padding-right: 40px;
+}
+
+.block-info__infobar p {
+    margin: 5px 0;
+    padding-right: 30px;
+}
+
+.sec4 {
+    background: url("../img/bg2.jpg") left;
+    background-size: cover;
+    min-height: 50px;
+    border: 2px solid black;
+}
+
 @media screen and (max-width: 1000px){
     .sec1 {
         background-size: cover;
@@ -455,8 +548,12 @@ a#prev:hover, a#next:hover {
         margin: 0 auto;
     }
 
-    #carousel {
+    #carousel    {
         width:100%;
+    }
+
+    .sec3 {
+        padding-bottom: 40px;
     }
 
     .sec3 h1 {
@@ -474,6 +571,14 @@ a#prev:hover, a#next:hover {
     .block-info__lore::after {
         position: static;
         display: none;
+    }
+
+    .block-info__attention {
+        margin-top: 40px;
+    }
+
+    .block-info__infobar {
+        margin-top: 40px;
     }
 }
 
