@@ -327,8 +327,8 @@ a#prev:hover, a#next:hover {
     text-align: center;
     color: #cda248;
     font-family: 'Bravo', sans-serif;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 36px;
+    line-height: 38px;
     position: relative;
     text-shadow: 1px 1px 10px black;
     margin: 10px 0;
@@ -342,6 +342,54 @@ a#prev:hover, a#next:hover {
 .sec3 h1 {
     margin: 0;
     padding-top: 40px;
+}
+
+.block-info {
+    display: flex;
+    margin-top: 40px;
+}
+
+.block-info__lore {
+    flex: 4;
+    margin-right: 40px;
+    min-height: 250px;
+    background: url("../img/block.jpg");
+    border-radius: 15px;
+    border: 3px solid black;
+}
+
+.block-info__useful-links {
+    flex: 4;
+    min-height: 250px;
+    background: url("../img/block.jpg") right;
+    border-radius: 15px;
+    border: 3px solid black;
+}
+
+.lore__item a {
+    text-align: center;
+    color: #cda248;
+    font-family: 'Bravo', sans-serif;
+    font-size: 36px;
+    line-height: 38px;
+    text-shadow: 1px 1px 10px black;
+}
+
+.lore__item {
+    list-style: none;
+    position: relative;
+    padding-left: 20px;
+}
+
+.lore__item::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 20px;
+    top: 10px;
+    left: -15px;
+    background: url("../img/list.png");
+    background-size: cover;
 }
 
 @media screen and (max-width: 1000px){
