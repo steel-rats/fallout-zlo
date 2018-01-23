@@ -97,6 +97,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+* {
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: "Bravo";
     src: url("../fonts/BravoRG.otf");
@@ -341,7 +345,7 @@ a#prev:hover, a#next:hover {
 
 .sec3 h1 {
     margin: 0;
-    padding-top: 40px;
+    padding-top: 140px;
 }
 
 .block-info {
@@ -356,14 +360,21 @@ a#prev:hover, a#next:hover {
     background: url("../img/block.jpg");
     border-radius: 15px;
     border: 3px solid black;
+    position: relative;
 }
 
 .block-info__useful-links {
     flex: 4;
+    margin-left: 40px;
     min-height: 250px;
     background: url("../img/block.jpg") right;
     border-radius: 15px;
     border: 3px solid black;
+    text-align: right;
+}
+
+.block-info__useful-links .lore__item {
+    margin-right: 40px;
 }
 
 .lore__item a {
@@ -381,7 +392,7 @@ a#prev:hover, a#next:hover {
     padding-left: 20px;
 }
 
-.lore__item::before {
+.block-info__lore .lore__item::before {
     content: '';
     position: absolute;
     width: 25px;
@@ -390,6 +401,27 @@ a#prev:hover, a#next:hover {
     left: -15px;
     background: url("../img/list.png");
     background-size: cover;
+}
+
+.block-info__useful-links .lore__item::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 20px;
+    top: 10px;
+    right: -30px;
+    background: url("../img/list.png");
+    background-size: cover;
+}
+
+.block-info__lore::after {
+    content: '';
+    position: absolute;
+    width: 393px;
+    height: 271px;
+    background: url("../img/Fo4_Hacker.png") center;
+    top: 150px;
+    right: -265px;
 }
 
 @media screen and (max-width: 1000px){
@@ -425,6 +457,23 @@ a#prev:hover, a#next:hover {
 
     #carousel {
         width:100%;
+    }
+
+    .sec3 h1 {
+        padding-top: 40px;
+    }
+
+    .block-info {
+        display: block;
+    }
+
+    .block-info__useful-links {
+        margin-top: 40px;
+    }
+
+    .block-info__lore::after {
+        position: static;
+        display: none;
     }
 }
 
