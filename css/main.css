@@ -549,6 +549,11 @@ a#prev:hover, a#next:hover {
     padding-top: 100px;
 }
 
+.list-reallife {
+    line-height: 32px;
+    padding: 10px 0;
+}
+
 
 @media screen and (max-width: 1000px){
     .sec1 {
