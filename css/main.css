@@ -157,6 +157,7 @@ p, ol {
 
 .menu-list {
     flex: 2;
+    text-align: center;
 }
 
 .menu-link {
