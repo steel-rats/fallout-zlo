@@ -697,6 +697,17 @@ a#prev:hover, a#next:hover {
         margin: 0;
         margin-top: 40px;
     }
+
+    .block__master {
+        display: block;
+        margin: 0 auto;
+        width: 98%;
+    }
+
+    .right img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 
